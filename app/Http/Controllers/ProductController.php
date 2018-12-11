@@ -19,7 +19,7 @@ class ProductController extends Controller
 
         Storage::disk('local')->put('data.json', json_encode($contactInfo));
 
-        return redirect('/home');
+        return redirect('/');
 
     }
 }
